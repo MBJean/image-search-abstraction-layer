@@ -83,7 +83,7 @@ app.get("/latest", function(req, res, next) {
 });
 
 app.get("/", function (req, res, next) {
-	res.send("This is a simple app that performs an image search (using '/imagesearch/yoursearch') and returns image metadata. You can paginate through the responses by adding the parameter '?offset=#' to the URL. Recent queries are stored by accessing '/latest'. In a live app, 'latest' would only show searchs up to ten days old (commented out above), but here the timeframe is unlimited.");
+	res.send("This is a simple app that performs an image search (using '/imagesearch/yoursearch') and returns image metadata. You can paginate through the responses by adding the parameter '?offset=#' to the URL. Recent queries are stored by accessing '/latest'. In a live app, 'latest' would only show searches up to ten days old (commented out above), but here the timeframe is unlimited.");
 });
 
 app.listen(app.get('port'), function() {
