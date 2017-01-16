@@ -1,0 +1,25 @@
+{
+  "name": "image-search-abstraction-layer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MBJean/image-search-abstraction-layer.git"
+  },
+  "author": "MBJean",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MBJean/image-search-abstraction-layer/issues"
+  },
+  "homepage": "https://github.com/MBJean/image-search-abstraction-layer#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "google-images": "^2.0.0",
+    "image-search": "0.0.1",
+    "mongodb": "^2.2.21"
+  }
+}
