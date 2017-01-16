@@ -5,12 +5,14 @@ var express = require("express");
 var mongodb = require("mongodb");
 var url = require("url");
 var ImagesClient = require("google-images");
-var client = new ImagesClient("016213162840515482318:n4gofh5dqx8", "AIzaSyB5HLB36712G1GSXM3t47ufCnQuu2d4AII");
 var config = require("./config");
 
 // The MongoDB connection
 var mLab = "mongodb://" + config.db.host + "/" + config.db.name;
 var MongoClient = mongodb.MongoClient;
+
+// The custom Google search
+var client = new ImagesClient(config.gs.id, config.gs.api);
 
 var app = express();
 
